@@ -10,7 +10,9 @@
  1. run 'kotlinc extract.kt -classpath gson-2.12.1.jar -include-runtime -d result.jar'
  2. run 'java -cp "result.jar;.\gson-2.12.1.jar" ExtractKt'
 
-The result should print out the dataset based on the following requirements:
+ You may need to change '\gson-2.12.1.jar' based on your directory or version
+
+## The result should print out the dataset based on the following requirements:
  1. Display all the items grouped by "listId"
  2. Sort the results first by "listId" then by "name" when displaying.
  3. Filter out any items where "name" is blank or null.
